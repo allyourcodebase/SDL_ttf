@@ -3,7 +3,6 @@ const std = @import("std");
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
-    const harfbuzz_enabled = b.option(bool, "enable-harfbuzz", "Use HarfBuzz to improve text shaping") orelse false;
 
     const upstream = b.dependency("SDL_ttf", .{});
 
@@ -18,15 +17,6 @@ pub fn build(b: *std.Build) void {
         }),
     });
     lib.addCSourceFile(.{ .file = upstream.path("SDL_ttf.c") });
-
-    if (harfbuzz_enabled) {
-        const harfbuzz_dep = b.dependency("harfbuzz", .{
-            .target = target,
-            .optimize = optimize,
-        });
-        lib.linkLibrary(harfbuzz_dep.artifact("harfbuzz"));
-        lib.root_module.addCMacro("TTF_USE_HARFBUZZ", "");
-    }
 
     const freetype_dep = b.dependency("freetype", .{
         .target = target,

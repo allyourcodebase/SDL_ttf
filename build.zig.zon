@@ -4,10 +4,6 @@
     .fingerprint = 0xa98f7681c4b9d53c,
     .minimum_zig_version = "0.14.0",
     .dependencies = .{
-        .harfbuzz = .{
-            .url = "git+https://github.com/allyourcodebase/harfbuzz#d642b5da200481be30a2e3518e7716722079d6a5",
-            .hash = "harfbuzz-8.4.0-AAAAAESZAABw9XXl0lM3Ohy0A1IRj1m1k0hYoXg3Ct0t",
-        },
         .freetype = .{
             .url = "git+https://github.com/allyourcodebase/freetype#d0a748192f26bd20f9f339d0d7156b84e90eb4dc",
             .hash = "freetype-2.13.2-AAAAAByJAAD7KQxAcdDYidJ3YigvRztfnLmn4rQpvLms",
