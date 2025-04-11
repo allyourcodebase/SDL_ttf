@@ -28,12 +28,6 @@ pub fn build(b: *std.Build) void {
         lib.root_module.addCMacro("TTF_USE_HARFBUZZ", "");
     }
 
-    const freetype_dep = b.dependency("freetype", .{
-        .target = target,
-        .optimize = optimize,
-    });
-    lib.linkLibrary(freetype_dep.artifact("freetype"));
-
     const sdl_dep = b.dependency("SDL", .{
         .target = target,
         .optimize = optimize,
