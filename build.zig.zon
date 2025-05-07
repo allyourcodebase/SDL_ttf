@@ -5,8 +5,8 @@
     .minimum_zig_version = "0.14.0",
     .dependencies = .{
         .harfbuzz = .{
-            .url = "git+https://github.com/allyourcodebase/harfbuzz#d642b5da200481be30a2e3518e7716722079d6a5",
-            .hash = "harfbuzz-8.4.0-AAAAAESZAABw9XXl0lM3Ohy0A1IRj1m1k0hYoXg3Ct0t",
+            .url = "git+https://github.com/allyourcodebase/harfbuzz#54efff46c79226e4d3c2369b77481007cecf9a4e",
+            .hash = "harfbuzz-8.4.0-Ip1VAkqZAABX2uKHUmkfF_uNl0ssRdydm2pdrBjtoa-Z",
         },
         .freetype = .{
             .url = "git+https://github.com/allyourcodebase/freetype#d0a748192f26bd20f9f339d0d7156b84e90eb4dc",
