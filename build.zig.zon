@@ -1,6 +1,6 @@
 .{
     .name = .SDL_ttf,
-    .version = "3.2.0",
+    .version = "3.2.2",
     .fingerprint = 0xa98f7681c4b9d53c,
     .minimum_zig_version = "0.14.0",
     .dependencies = .{
@@ -13,8 +13,8 @@
             .hash = "freetype-2.13.2-AAAAAByJAAD7KQxAcdDYidJ3YigvRztfnLmn4rQpvLms",
         },
         .SDL = .{
-            .url = "git+https://github.com/castholm/SDL/#v0.2.2+3.2.12",
-            .hash = "sdl-0.2.2+3.2.12-7uIn9EpsfgG_BF1uqSfix5rkc6EsZCZY35sQxAjVVO7a",
+            .url = "git+https://github.com/castholm/SDL/#v0.2.3+3.2.14",
+            .hash = "sdl-0.2.3+3.2.14-7uIn9BR5fgHLSuR3NxLrwhUENvEQwoNBeV2-johgGda_",
         },
         .SDL_ttf = .{
             .url = "git+https://github.com/libsdl-org/SDL_ttf#release-3.2.2",
