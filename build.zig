@@ -25,7 +25,7 @@ pub fn build(b: *std.Build) void {
             .optimize = optimize,
         });
         lib.linkLibrary(harfbuzz_dep.artifact("harfbuzz"));
-        lib.root_module.addCMacro("TTF_USE_HARFBUZZ", "");
+        lib.root_module.addCMacro("TTF_USE_HARFBUZZ", "1");
     }
 
     const freetype_dep = b.dependency("freetype", .{
