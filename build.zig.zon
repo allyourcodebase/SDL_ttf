@@ -5,15 +5,15 @@
     .minimum_zig_version = "0.14.0",
     .dependencies = .{
         .harfbuzz = .{
-            .url = "git+https://github.com/allyourcodebase/harfbuzz#70b0ac7b35b7408988a64c3caa77b59111c39d2d",
-            .hash = "harfbuzz-8.5.0-Ip1VAmKZAACeiu5O_1PbWCzafs7END80R1dFW5HG9Hql",
+            .url = "git+https://github.com/allyourcodebase/harfbuzz#6bb522d22cee0ce1d1446bd59fa5b0417f25303e",
+            .hash = "harfbuzz-8.5.0-Ip1VAqCZAADRh-K2AVujG0N3VAal-AKwkZrvlYOaloyB",
         },
         .freetype = .{
-            .url = "git+https://github.com/allyourcodebase/freetype#5a20cf829a5fe4bcd9f5158666b80d5558931b74",
-            .hash = "freetype-2.13.3-C3-WdciJAABmQveLV5bkJxVmby23DYriczRrMhkTinnk",
+            .url = "git+https://github.com/allyourcodebase/freetype#9d847affbd224cf6a7303ad6d98715e3675ef78c",
+            .hash = "freetype-2.13.3-C3-WdeyJAAD9z8BeYYQ8N3gNlPI9NvHRxg5039S5vhz7",
         },
         .SDL = .{
-            .url = "git+https://github.com/allyourcodebase/SDL.git#d29847ebcb6da34dec466a06163431982500a092",
+            .url = "git+https://github.com/allyourcodebase/SDL#d29847ebcb6da34dec466a06163431982500a092",
             .hash = "SDL-2.32.6-JToi38aTEgECY2mV9iUG7dNouCbarfJ1mkzjjm53gC80",
         },
         .SDL_ttf = .{
