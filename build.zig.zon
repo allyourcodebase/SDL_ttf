@@ -13,8 +13,8 @@
             .hash = "freetype-2.13.3-C3-WdeyJAAD9z8BeYYQ8N3gNlPI9NvHRxg5039S5vhz7",
         },
         .SDL = .{
-            .url = "git+https://github.com/castholm/SDL?ref=v0.3.0+3.2.22#b1913e7c31ad72ecfd3ab04aeac387027754cfaf",
-            .hash = "sdl-0.3.0+3.2.22-7uIn9Pg3fwGG2IyIOPxxOSVe-75nUng9clt7tXGFLzMr",
+            .url = "git+https://github.com/castholm/SDL?ref=v0.3.1+3.2.24#1d4b8dcc03bd216712b55318b4ad2402b5511490",
+            .hash = "sdl-0.3.1+3.2.24-7uIn9L9AfwFQf90JcTh3Slw__ZA8SEomk6fQI9F8ItY0",
         },
         .SDL_ttf = .{
             .url = "git+https://github.com/libsdl-org/SDL_ttf#release-3.2.2",
