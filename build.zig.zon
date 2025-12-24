@@ -2,19 +2,19 @@
     .name = .SDL_ttf,
     .version = "2.24.0",
     .fingerprint = 0xa98f7681c4b9d53c,
-    .minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .harfbuzz = .{
-            .url = "git+https://github.com/allyourcodebase/harfbuzz#6bb522d22cee0ce1d1446bd59fa5b0417f25303e",
-            .hash = "harfbuzz-8.5.0-Ip1VAqCZAADRh-K2AVujG0N3VAal-AKwkZrvlYOaloyB",
+            .url = "git+https://github.com/allyourcodebase/harfbuzz#da947143173370b8123ef93f21353d58ce6e6d65",
+            .hash = "harfbuzz-12.2.0-Ip1VAuGZAAD2dBKDBtAW50eyC9VhSmXFlupI1vCNTFL4",
         },
         .freetype = .{
-            .url = "git+https://github.com/allyourcodebase/freetype#9d847affbd224cf6a7303ad6d98715e3675ef78c",
-            .hash = "freetype-2.13.3-C3-WdeyJAAD9z8BeYYQ8N3gNlPI9NvHRxg5039S5vhz7",
+            .url = "git+https://github.com/allyourcodebase/freetype#f2f3f662cfc6cf7be2d39d8373c6e6b91297ced8",
+            .hash = "freetype-2.14.1-C3-WdWqKAADgPV0BhYffbFweY71Qns18mICAEtclm1a6",
         },
         .SDL = .{
-            .url = "git+https://github.com/allyourcodebase/SDL#a91ef63a07449874ec049dacfd6459b1131fd27b",
-            .hash = "SDL-2.32.10-JToi3_a0EgFQAnsafUA-gNv9ku-yxMoYF9Wjq7HhD5q5",
+            .url = "git+https://github.com/allyourcodebase/SDL#25dc764272bf117198f3cd6f44f52dae5c45d60a",
+            .hash = "SDL-2.32.10-JToi38G1EgFICTNzwfhy7XOMuWw7gN1xDvPOQ5CCoI8R",
         },
         .SDL_ttf = .{
             .url = "git+https://github.com/libsdl-org/SDL_ttf#release-2.24.0",
