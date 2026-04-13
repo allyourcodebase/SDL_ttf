@@ -1,20 +1,20 @@
 .{
     .name = .SDL_ttf,
-    .version = "3.2.2",
+    .version = "3.2.3-1",
     .fingerprint = 0xa98f7681c4b9d53c,
     .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .harfbuzz = .{
-            .url = "git+https://github.com/allyourcodebase/harfbuzz#da947143173370b8123ef93f21353d58ce6e6d65",
-            .hash = "harfbuzz-12.2.0-Ip1VAuGZAAD2dBKDBtAW50eyC9VhSmXFlupI1vCNTFL4",
+            .url = "git+https://github.com/allyourcodebase/harfbuzz#d055840ecefefcd57f5ddeb2fa8c83fafed1a40b",
+            .hash = "harfbuzz-14.1.0-Ip1VAuGZAAC1jdxPHOMPoHyi-50Hm_q4bveaVflELHGw",
         },
         .freetype = .{
-            .url = "git+https://github.com/allyourcodebase/freetype#f2f3f662cfc6cf7be2d39d8373c6e6b91297ced8",
-            .hash = "freetype-2.14.1-C3-WdWqKAADgPV0BhYffbFweY71Qns18mICAEtclm1a6",
+            .url = "git+https://github.com/allyourcodebase/freetype#884fd2235e6ae1ec4306eda30b3259f20930ed2e",
+            .hash = "freetype-2.14.3-C3-WdXSKAAB-kHs4qgRoeoFnRkNQn6M_SSlUGZ6ywgBQ",
         },
         .SDL = .{
-            .url = "git+https://github.com/castholm/sdl?ref=v0.4.0+3.4.0#ae5deb068787bd71d9aadbc054ff1af54f5d058c",
-            .hash = "sdl-0.4.0+3.4.0-SDL--u6yowGyvoiJ5qkFm_T1-MpmvnHShh2q2mTZf1fo",
+            .url = "git+https://github.com/castholm/sdl#c5ba24c694b5d520cdc1d029d8def398690d6894",
+            .hash = "sdl-0.4.2+3.4.4-SDL--kB3pQHKG_4zWG-pH04ZcZZj_IRF7dwMpxNVGwd6",
         },
         .SDL_ttf = .{
             .url = "git+https://github.com/libsdl-org/SDL_ttf#release-3.2.2",
