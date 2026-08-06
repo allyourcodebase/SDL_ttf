@@ -6,11 +6,7 @@ pub fn build(b: *std.Build) void {
     const sanitize_c_type = @typeInfo(@FieldType(std.Build.Module.CreateOptions, "sanitize_c")).optional.child;
     const sanitize_c = b.option(sanitize_c_type, "sanitize-c", "Detect undefined behavior in C");
     const harfbuzz_enabled = b.option(bool, "enable-harfbuzz", "Use HarfBuzz to improve text shaping") orelse true;
-    const preferred_linkage = b.option(
-        std.builtin.LinkMode,
-        "preferred_linkage",
-        "Prefer building statically or dynamically linked libraries (default: static)",
-    ) orelse .static;
+    const linkage = b.option(std.builtin.LinkMode, "linkage", "Link mode") orelse .static;
 
     const upstream = b.dependency("SDL_ttf", .{});
 
@@ -24,7 +20,7 @@ pub fn build(b: *std.Build) void {
     const lib = b.addLibrary(.{
         .name = "SDL3_ttf",
         .version = .{ .major = 3, .minor = 2, .patch = 2 },
-        .linkage = preferred_linkage,
+        .linkage = linkage,
         .root_module = mod,
     });
     mod.addIncludePath(upstream.path("include"));
@@ -52,7 +48,7 @@ pub fn build(b: *std.Build) void {
     const sdl = b.dependency("SDL", .{
         .target = target,
         .optimize = optimize,
-        .preferred_linkage = preferred_linkage,
+        .linkage = linkage,
     }).artifact("SDL3");
     mod.linkLibrary(sdl);
 
